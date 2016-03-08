@@ -47,3 +47,11 @@ func giveMultipleValues(person: Person) -> Person {
 }
 
 let andyyClone = giveMultipleValues((age: 28, isTall: false, name: "Andyy"))
+
+
+let sizeArguments = (width: 100.0, height: 100.0)
+let size = CGSize(sizeArguments)
+
+// We flip the named arguments to cause a compile error
+//let badSizeArguments = (height: 100.0, width: 100.0)
+//let badSize = CGSize(badSizeArguments)
