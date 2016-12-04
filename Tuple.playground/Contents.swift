@@ -34,9 +34,9 @@ print(person.name)
 
 
 
-func voidMethodA() -> Void { /** */ }
-func voidMethodB() -> () { /** */ }
-func voidMethodC() { /** */ }
+func voidMethodA() -> Void { }
+func voidMethodB() -> () { }
+func voidMethodC() { }
 
 
 func giveMultipleValues(person: Person) -> Person {
@@ -46,6 +46,9 @@ func giveMultipleValues(person: Person) -> Person {
     return person
 }
 
+
+// MARK: - Deprecated
+/*
 let andyyClone = giveMultipleValues((age: 28, isTall: false, name: "Andyy"))
 
 
@@ -55,3 +58,4 @@ let size = CGSize(sizeArguments)
 // We flip the named arguments to cause a compile error
 //let badSizeArguments = (height: 100.0, width: 100.0)
 //let badSize = CGSize(badSizeArguments)
+*/
